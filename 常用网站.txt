@@ -4,3 +4,19 @@ http://www.t086.com/code/php/function.php-mysql_fetch_array.php
 
 CodeIgniter
 
+
+
+
+php插入数据库乱码问题解决：
+1. 页面保存要用utf-8
+2. 数据库创建要用utf-8
+3. 插入数据时要用utf-8
+mysql_query("set names 'utf8'"); //使用GBK中文编码;
+
+
+重点：
+1. 文件上传。
+2. 数组。
+3. 文件操作。
+4. 数据库操作。
+5. 字符串操作与正则表达式。

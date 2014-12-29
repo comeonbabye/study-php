@@ -42,6 +42,10 @@ function CheckPost()
 	}
 }
 </SCRIPT>
+<html>
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
 
   <form action="add.php" method="post" name="myform" onsubmit="return CheckPost();">
   用户：<input type="text" size="10" name="user" /><br>
@@ -51,3 +55,4 @@ function CheckPost()
   <input type="submit" name="submit" value="发布留言"/>
 
   </form>
+</html>

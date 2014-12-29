@@ -16,6 +16,7 @@ if(!$connect) {
 }
 //选择数据库
 $db_selected = mysql_select_db("tony", $connect);
+mysql_query("set names 'utf8'"); //使用GBK中文编码;
 $sql = "select * from user ";
 $result= mysql_query($sql,$connect) or die (mysql_error());
 

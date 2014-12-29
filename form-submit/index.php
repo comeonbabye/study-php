@@ -8,14 +8,15 @@ header("Content-Type: text/html;charset=utf-8");
 		var name = document.getElementById("name").value;
 		if(name == '') {
 			alert('姓名不能为空！');
+			myfrom.name.focus();
 			return false;
 		}
 		return true;
-	} 
+	}
 //-->
 </script>
 
-  <form action="info.php" method="get">
+  <form name="myfrom" action="info.php" method="get">
 	<lable>姓名：</label>
   <input type="text" name="name" id="name" value=""/>
 
