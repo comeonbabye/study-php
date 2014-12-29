@@ -5,6 +5,7 @@
  * www.php100.com Develop a project PHP - MySQL - Apache
  * Window 2003 - Preferences - PHPeclipse - PHP - Code Templates
  */
+ header("Content-type: text/html; charset=utf-8");
  include("conn.php");
 
  if($_POST['submit']){

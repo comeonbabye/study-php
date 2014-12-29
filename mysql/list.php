@@ -9,7 +9,7 @@ header("Content-Type: text/html;charset=utf-8");
 
  include("conn.php");
  include("head.php");
- 
+
   $SQL="SELECT * FROM `message` order by id desc";
   $query=mysql_query($SQL);
   while($row=mysql_fetch_array($query)){
@@ -27,5 +27,5 @@ header("Content-Type: text/html;charset=utf-8");
 </table>
 <?php
   }
-  mysql_free_result($result);
+  #mysql_free_result($result); #php5.5好像没有这个功能
 ?>
